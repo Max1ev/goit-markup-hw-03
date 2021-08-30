@@ -25,14 +25,9 @@ h6 {
 
 img {
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
+  width: 100%;
   height: auto;
-}
-
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
 }
 
 button {
@@ -63,13 +58,12 @@ span {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
 }
 
 .header {
   background-color: var(--main-title-color);
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .header .container {
@@ -140,7 +134,6 @@ span {
 /*------------Oсновной контент----------*/
 
 .hero {
-  min-width: 1600px;
   height: 600px;
   padding-top: 200px;
   background-color: #2f303a;
@@ -170,8 +163,6 @@ span {
   font-size: 16px;
   line-height: 1.88;
   display: block;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
   background-color: var(--accent-color);
@@ -182,25 +173,19 @@ span {
 /*---------------наши преимущества-----------------*/
 
 .our-advantages {
-  background-color: var(--main-title-color);
-}
-
-.advantages-conteiner {
   width: 1200px;
+  background-color: var(--main-title-color);
+  padding-top: 95px;
+  padding-bottom: 95px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 95px;
-  margin-bottom: 95px;
 }
 
 .advantages-list {
   display: flex;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
+  justify-content: center;
   margin-right: -30px;
+  padding: 0;
 }
 
 .advantages-list > .advantages-item {
@@ -229,22 +214,20 @@ span {
 /*---------------наши навыки-----------------*/
 
 .our-skills {
-  background-color: var(--main-title-color);
-}
-
-.skills-conteiner {
   width: 1200px;
+  background-color: var(--main-title-color);
+  padding-bottom: 95px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 95px;
 }
 
 .skills-list {
   display: flex;
+  padding: 0;
+  justify-content: space-around;
 }
 
 .skills-item {
-  margin-right: 30px;
 }
 
 .skills-title {
@@ -261,28 +244,21 @@ span {
 .our-team {
   background: #f5f4fa;
   padding-top: 95px;
-}
-
-.team-conteiner {
-  width: 1170px;
+  padding-bottom: 95px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .team-list {
   display: flex;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
   margin-right: -30px;
+  padding: 0;
 }
 
 .team-list > .item {
   background-color: #fff;
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
-  margin-bottom: 95px;
-  margin-top: 50px;
   box-shadow: 0px 2px 1px rgb(0 0 0 / 20%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 1px 3px rgb(0 0 0 / 12%);
   border-radius: 0px 0px 4px 4px;
@@ -296,6 +272,7 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+  margin-bottom: 50px;
 }
 
 .name {
@@ -323,6 +300,8 @@ span {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-conteiner {
@@ -333,8 +312,6 @@ span {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-site-logo {
@@ -347,7 +324,7 @@ span {
 }
 
 .address-list {
-  padding-top: 20px;
+  padding: 20px 0 0 0;
 }
 
 .mail {
@@ -386,18 +363,15 @@ span {
 /*--------------портфолио-----------------*/
 
 .portfolio {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding-top: 95px;
+  padding-bottom: 95px;
   background-color: var(--main-title-color);
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-top: 95px;
   margin-bottom: 50px;
 }
 
@@ -429,15 +403,19 @@ span {
   background-color: var(--accent-color);
 }
 
+.exemple-description {
+  border: 1px solid #eee;
+  border-top: 0;
+  padding: 20px 24px;
+}
+
 .title-name {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
-  margin-left: 25px;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .filter {
@@ -446,15 +424,10 @@ span {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  margin-left: 25px;
-  margin-bottom: 20px;
 }
 
 .page-portfolio {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 95px;
+  margin: 0 auto;
 }
 
 .portfolio-list {
